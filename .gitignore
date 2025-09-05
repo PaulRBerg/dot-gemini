@@ -1,0 +1,7 @@
+# misc directories
+tmp/
+
+# misc files
+google_accounts.json
+installation_id
+oauth_creds.json

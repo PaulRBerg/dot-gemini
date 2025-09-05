@@ -1,0 +1,71 @@
+{
+  "selectedAuthType": "oauth-personal",
+  "theme": "Default",
+  "usageStatisticsEnabled": false,
+  "telemetry": {
+    "enabled": false
+  },
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "trust": true,
+      "args": ["-y", "@upstash/context7-mcp"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "trust": true,
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "~"]
+    },
+    "github": {
+      "httpUrl": "https://api.githubcopilot.com/mcp/",
+      "trust": true,
+      "headers": {
+        "Authorization": "Bearer $GITHUB_TOKEN"
+      },
+      "excludeTools": [
+        "assign_copilot_to_issue",
+        "get_code_scanning_alert",
+        "get_global_security_advisory",
+        "list_dependabot_alerts",
+        "list_org_repository_security_advisories",
+        "list_secret_scanning_alerts",
+        "list_workflow_run_artifacts",
+        "request_copilot_review",
+        "manage_notification_subscription",
+        "manage_repository_notification_subscription",
+        "mark_all_notifications_read"
+      ]
+    },
+    "magic": {
+      "command": "npx",
+      "trust": true,
+      "args": ["-y", "@21st-dev/magic@latest"],
+      "env": {
+        "API_KEY": "$API_KEY_MAGIC_MCP"
+      }
+    },
+    "morphllm-fast-apply": {
+      "command": "npx",
+      "trust": true,
+      "args": ["@morph-llm/morph-fast-apply", "~/"],
+      "env": {
+        "ALL_TOOLS": "true",
+        "MORPH_API_KEY": "$API_KEY_MORPH_MCP"
+      }
+    },
+    "playwright": {
+      "command": "npx",
+      "trust": true,
+      "args": ["@playwright/mcp@latest"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "trust": true,
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "serena": {
+      "command": "uv",
+      "args": ["run", "--directory", "/Users/prb/Workspace/cc/serena-main", "serena", "start-mcp-server"]
+    }
+  }
+}
