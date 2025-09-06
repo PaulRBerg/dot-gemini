@@ -11,11 +11,6 @@
       "trust": true,
       "args": ["-y", "@upstash/context7-mcp"]
     },
-    "filesystem": {
-      "command": "npx",
-      "trust": true,
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "~"]
-    },
     "github": {
       "httpUrl": "https://api.githubcopilot.com/mcp/",
       "trust": true,
@@ -35,14 +30,6 @@
         "manage_repository_notification_subscription",
         "mark_all_notifications_read"
       ]
-    },
-    "magic": {
-      "command": "npx",
-      "trust": true,
-      "args": ["-y", "@21st-dev/magic@latest"],
-      "env": {
-        "API_KEY": "$API_KEY_MAGIC_MCP"
-      }
     },
     "morphllm-fast-apply": {
       "command": "npx",

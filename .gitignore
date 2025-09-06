@@ -1,7 +1,10 @@
 # misc directories
+backups/
+logs/
 tmp/
 
 # misc files
 google_accounts.json
 installation_id
 oauth_creds.json
+supergemini-metadata.json
