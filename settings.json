@@ -15,7 +15,8 @@
       "httpUrl": "https://api.githubcopilot.com/mcp/",
       "trust": true,
       "headers": {
-        "Authorization": "Bearer $GITHUB_TOKEN"
+        "Authorization": "Bearer $GITHUB_TOKEN",
+        "X-MCP-Toolsets": "actions,discussions,issues,pull_requests,repos"
       },
       "excludeTools": [
         "assign_copilot_to_issue",
@@ -39,11 +40,6 @@
         "ALL_TOOLS": "true",
         "MORPH_API_KEY": "$API_KEY_MORPH_MCP"
       }
-    },
-    "playwright": {
-      "command": "npx",
-      "trust": true,
-      "args": ["@playwright/mcp@latest"]
     },
     "sequential-thinking": {
       "command": "npx",
