@@ -1,10 +1,4 @@
 {
-  "selectedAuthType": "oauth-personal",
-  "theme": "Default",
-  "usageStatisticsEnabled": false,
-  "telemetry": {
-    "enabled": false
-  },
   "mcpServers": {
     "context7": {
       "command": "npx",
@@ -50,5 +44,19 @@
       "command": "uv",
       "args": ["run", "--directory", "/Users/prb/Workspace/cc/serena-main", "serena", "start-mcp-server"]
     }
+  },
+  "privacy": {
+    "usageStatisticsEnabled": false
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "telemetry": {
+    "enabled": false
+  },
+  "ui": {
+    "theme": "Default"
   }
 }
