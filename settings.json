@@ -39,10 +39,6 @@
       "command": "npx",
       "trust": true,
       "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
-    },
-    "serena": {
-      "command": "uv",
-      "args": ["run", "--directory", "/Users/prb/Workspace/cc/serena-main", "serena", "start-mcp-server"]
     }
   },
   "privacy": {

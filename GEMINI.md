@@ -1,7 +1,14 @@
 # Instructions
 
-@context/BASE.md
+AI agents must follow these instructions.
 
-# Tools
+@context/AGENT_COORDINATION.md
 
-@context/tools/TOOLS.md
+@context/CRITICAL_THINKING.md
+
+@context/GIT.md
+
+@context/MODERN_CLI.md
+
+@context/SENIOR_PROGRAMMER.md
+
